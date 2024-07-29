@@ -25,7 +25,7 @@ We’ve built a system that uses natural language processing (NLP) techniques, v
 Let’s zoom in on how we built this system.
 
 ## Part 1: Knowledge Acquisition
-You can find the complete details for part 1 in the following [Jupyter Notebook]().
+You can find the complete details for part 1 in the following [Jupyter Notebook]([NTTW/notebook/Part 1 - Getting Knowledge.ipynb](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/NTTW/notebook/Part%201%20-%20Getting%20Knowledge.ipynb).
 
 ### Harnessing GPU Power
 To ensure optimal performance, we leverage GPU acceleration when available. This significantly speeds up our processing, especially when dealing with large volumes of video data.
@@ -73,7 +73,7 @@ for video_data, chunks in tqdm(zip(video_data_list, chunks_list), total=len(vide
 ```
 
 ## Part 2: Knowledge Retrieval
-Having built our knowledge base, it's time to explore how to effectively use it. As with Part 1, detailed instructions for this section can be found in the [Jupyter Notebook]().
+Having built our knowledge base, it's time to explore how to effectively use it. As with Part 1, detailed instructions for this section can be found in the [Jupyter Notebook](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/NTTW/notebook/Part%202%20-%20Retrieving%20Knowledge.ipynb).
 
 ### Accessing Our Knowledge Base
 We start by connecting to our Chroma database, which now contains all the processed information from our YouTube videos.
