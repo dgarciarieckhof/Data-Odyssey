@@ -7,8 +7,8 @@ How many times have you wanted to watch multiple YouTube videos but didn’t hav
 ## The Challenge
 YouTube video transcripts are packed with useful information, but they can be hard to search through and analyze. They're often long and unorganized, making it tough to quickly find what you're looking for or fully understand the content.
 
-## Our Solution
-We’ve built a system that uses natural language processing (NLP) techniques, vector databases, and large language models (LLMs) to create a searchable and queryable knowledge base from YouTube videos.
+## The Solution
+A system that uses natural language processing (NLP) techniques, vector databases, and large language models (LLMs) to create a searchable and queryable knowledge base from YouTube videos.
 
 ### Key Highlights:
 - **Fully Local Deployment**: Our entire system runs locally on your machine, ensuring data privacy and reducing dependency on external services.
@@ -22,13 +22,13 @@ We’ve built a system that uses natural language processing (NLP) techniques, v
 4. **Vector Database**: Storing and retrieving processed content efficiently using ChromaDB.
 5. **Large Language Model**: Generating human-like responses to queries.
 
-Let’s zoom in on how we built this system.
+Let’s zoom in on how the system was built.
 
 ## Part 1: Knowledge Acquisition
 You can find the complete details for part 1 in the following [Jupyter Notebook](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/NTTW/notebook/Part%201%20-%20Getting%20Knowledge.ipynb).
 
 ### Harnessing GPU Power
-To ensure optimal performance, we leverage GPU acceleration when available. This significantly speeds up our processing, especially when dealing with large volumes of video data.
+To ensure optimal performance, I leverage GPU acceleration when available. This significantly speeds up our processing, especially when dealing with large volumes of video data.
 
 ```python
 device = get_device()
@@ -39,7 +39,7 @@ GPU name: NVIDIA GeForce RTX 4090 Laptop GPU
 ```
 
 ### Building Our Knowledge Repository
-Our core system is a vector database built with Chroma. This database allows us to efficiently store and retrieve our processed video content. We use the 'all-MiniLM-L6-v2' model to create embeddings, which are numerical representations of our text data that capture semantic meaning.
+The core of the system is a vector database built with Chroma. This database allows us to efficiently store and retrieve our processed video content. We use the 'all-MiniLM-L6-v2' model to create embeddings, which are numerical representations of our text data that capture semantic meaning.
 
 ```Python
 model_name = 'all-MiniLM-L6-v2'
@@ -52,10 +52,10 @@ encoder_model, max_seq_length, collection, client = setup_vector_db(
 ```
 
 ### From Video to Data
-We fetch transcripts and metadata for each video using YouTube's API. This step transforms the video content into a format we can process and analyze.
+Transcripts and metadata for each video are fetched using YouTube's API. This step transforms the video content into a format we can process and analyze.
 
 ### Semantic Chunking and the Meaning of Words
-Using semantic chunking helps us to break down the transcript into meaningful segments, preserving context and making retrieval more accurate. Here’s how it works:
+Using semantic chunking helps to break down the transcript into meaningful segments, preserving context and making retrieval more accurate. Here’s how it works:
 1. Restore punctuation in the transcript to enhance readability. This step helps in accurately segmenting the text into sentences.
 2. Using spaCy's NLP model, we divide the transcript into individual sentences. This segmentation is crucial for the subsequent analysis.
 3. Each sentence is converted into a numerical representation (embedding) using a SentenceTransformer model.
@@ -64,7 +64,7 @@ Using semantic chunking helps us to break down the transcript into meaningful se
 6. Finally, we combine the sentences in each group into a coherent text chunk. These chunks represent semantically meaningful segments of the original transcript.
 
 ### Populating Our Knowledge Base
-Finally, we process our chunks and store them in our vector database. Each chunk is associated with its embedding, metadata, and the original video ID, allowing for efficient retrieval later.
+Finally, our chunks are processed and stored in the vector database. Each chunk is associated with its embedding, metadata, and the original video ID, allowing for efficient retrieval later.
 
 ```python
 for video_data, chunks in tqdm(zip(video_data_list, chunks_list), total=len(video_data_list)):
@@ -73,7 +73,7 @@ for video_data, chunks in tqdm(zip(video_data_list, chunks_list), total=len(vide
 ```
 
 ## Part 2: Knowledge Retrieval
-Having built our knowledge base, it's time to explore how to effectively use it. As with Part 1, detailed instructions for this section can be found in the [Jupyter Notebook](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/NTTW/notebook/Part%202%20-%20Retrieving%20Knowledge.ipynb).
+Having built the knowledge base, it's time to explore how to effectively use it. As with Part 1, detailed instructions for this section can be found in the [Jupyter Notebook](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/NTTW/notebook/Part%202%20-%20Retrieving%20Knowledge.ipynb).
 
 ### Accessing Our Knowledge Base
 We start by connecting to our Chroma database, which now contains all the processed information from our YouTube videos.
@@ -84,7 +84,7 @@ collection = client.get_collection(name='youtube_knowledgebase')
 ```
 
 ### The Language Model: Our AI Assistant
-For generating responses, we use Mistral-7B-Instruct model. This large language model allows us to generate human-like text based on the information in our database.
+For generating responses, I use Mistral-7B-Instruct model. This large language model allows us to generate human-like text based on the information in our database.
 
 ```python
 # initialize Mistral model
@@ -120,19 +120,19 @@ pipe = pipeline(
 ```
 
 ### Understanding Video Structure
-A key feature of our system is its capability to generate summaries of video content. By supplying the model with the complete context of a video, we can request a structured summary that outlines the main topics and key points discussed.
+A key feature of the system is its capability to generate summaries of video content. By supplying the model with the complete context of a video, we can request a structured summary that outlines the main topics and key points discussed.
 
 <img src="./misc/sum_answer.jpeg" width=150% height=100%> <br>
 *Summary and  main topics discussed in the video*
 
 ### Asking Questions, Getting Answers
-Another interesting feature of our system is its ability to answer questions about the video content. We use a combination of vector similarity search and re-ranking to find the most relevant chunks of information for a given query. Then, we use our language model to generate a detailed, coherent answer based on this context.
+Another interesting feature of the system is its ability to answer questions about the video content. Using a combination of vector similarity search and re-ranking to find the most relevant chunks of information for a given query. Then, our language model to generates a detailed, coherent answer based on this context.
 
 <img src="./misc/q_a_answer.jpeg" width=150% height=100%> <br>
 *Question answering task*
 
 ## Conclusions
-Our YouTube Knowledge Base project demonstrates the power of combining RAG with LLMs for video content analysis. This approach opens up exciting possibilities:
+This YouTube Knowledge Base project demonstrates the power of combining RAG with LLMs for video content analysis. This approach opens up exciting possibilities:
 
 1. **Enhanced Learning**: Students can quickly find and understand key concepts from educational videos.
 2. **Content Creation**: YouTubers can easily analyze their own and competitors' content for insights.
