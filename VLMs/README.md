@@ -4,8 +4,6 @@
 
 This repo will serve as a cookbook to explore VLM use cases and demonstrate how to apply them through fairly simple examples.
 
-This repository will contain notebooks for learning, fine-tuning, and adapting ColPali to your multimodal RAG use cases.
-
 |                  | Notebook                                                     | Description                                                  |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | V-RAG & Interpretability | [ColPali & VLMs](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/VLMs/tunnel_vision/notebook/ColPali%20%2B%20VLMs.ipynb) | Avoid tedious parsing and leverage the power of Visual Language Models, along with an interpretability module.|                                               |
