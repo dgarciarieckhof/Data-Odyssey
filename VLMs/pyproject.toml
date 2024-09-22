@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "tunnel-vision"
+version = "0.1.0"
+description = ""
+authors = ["Diego Garcia <dgarciarieckhof@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = {version = "^2.4.1+cu121", source = "pytorch-gpu"}
+torchvision = {version = "^0.19.1+cu121", source = "pytorch-gpu"}
+torchaudio = {version = "^2.4.1+cu121", source = "pytorch-gpu"}
+flash-attn = "^2.6.3"
+wheel = "^0.44.0"
+packaging = "^24.1"
+colpali-engine = "^0.2"
+pdf2image = "^1.17.0"
+transformers = {git = "https://github.com/huggingface/transformers.git"}
+qwen-vl-utils = "^0.0.5"
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+tqdm = "^4.66.5"
+pillow = "^10.4.0"
+datasets = "^3.0.0"
+torchmetrics = "^1.4.2"
+torchtext = "^0.18.0"
+mteb = "^1.14.21"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
