@@ -8,7 +8,7 @@ This repository will contain notebooks for learning, fine-tuning, and adapting C
 
 |                  | Notebook                                                     | Description                                                  |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| V-RAG & Interpretability | [ColPali & VLMs]([VLMs/tunnel_vision/notebook/ColPali + VLMs.ipynb](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/VLMs/tunnel_vision/notebook/ColPali%20%2B%20VLMs.ipynb)) | Generate your own similarity maps to interpret ColPali's predictions and retrieve information based on queries|                                               |
+| V-RAG & Interpretability | [ColPali & VLMs](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/VLMs/tunnel_vision/notebook/ColPali%20%2B%20VLMs.ipynb) | Generate your own similarity maps to interpret ColPali's predictions and retrieve information based on queries|                                               |
 
 ## Instructions
 
