@@ -8,7 +8,7 @@ This repository will contain notebooks for learning, fine-tuning, and adapting C
 
 |                  | Notebook                                                     | Description                                                  |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| V-RAG & Interpretability | [ColPali & VLMs](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/VLMs/tunnel_vision/notebook/ColPali%20%2B%20VLMs.ipynb) | Avoid tedious parsing and leverage the power of Visual Language Models, plus interpretability module|                                               |
+| V-RAG & Interpretability | [ColPali & VLMs](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/VLMs/tunnel_vision/notebook/ColPali%20%2B%20VLMs.ipynb) | Avoid tedious parsing and leverage the power of Visual Language Models, along with an interpretability module.|                                               |
 
 ## Instructions
 
