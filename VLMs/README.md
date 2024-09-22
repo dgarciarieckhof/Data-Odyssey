@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo will serve as a cookbook to explore VLMs use cases and how 
+This repo will serve as a cookbook to explore VLM use cases and demonstrate how to apply them through fairly simple examples.
 
 This repository will contain notebooks for learning, fine-tuning, and adapting ColPali to your multimodal RAG use cases.
 
