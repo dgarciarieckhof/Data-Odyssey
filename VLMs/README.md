@@ -9,6 +9,7 @@ This repo will serve as a cookbook to explore VLM use cases and demonstrate how 
 | V-RAG & Interpretability | [ColPali & VLMs](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/VLMs/tunnel_vision/notebook/ColPali%20%2B%20VLMs.ipynb) | Avoid tedious parsing and leverage the power of Visual Language Models and ColPali, along with an interpretability module.|                                               |
 | Fine-tuning ColPali | TBD | Generating a dataset of queries for training and fine-tuning ColPali models on custom datasets.|                                               |
 | Fine-tuning ColPali | TBD | Training and fine-tuning ColPali models on custom datasets.|                                               |
+| Showcasing ColQwen & Qdrant | TBD | Using ColQwen + Qdrant to index and search Annual Reports, along with an interpretability module.|                                               |
 | Zero-Shot Object Detection | TBD | TBD|                                               |
 
 ## Instructions
