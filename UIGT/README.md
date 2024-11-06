@@ -4,7 +4,7 @@ Imagine having hours of interview recordings, podcasts, or meeting discussions. 
 
 This pipeline is designed to handle raw audio (or even video) files, transcribe the content, identify and separate speakers, analyze the transcript for key insights, and then compile a structured report. The best part? You can do all of this with minimal manual effort, without listening thousands of hours of audio.
 
-![image](/misc/diagram.jpeg)
+![image](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/UIGT/misc/diagram.jpeg)
 
 ## Project Overview
 This is a project I developed to simplify audio analysis. It’s designed to take audio from interviews or any spoken format, transcribe it into text, perform speaker diarization to identify individual speakers, generate insights using a language model (LLM), and finally compile the results into a structured report. This pipeline could save hours of manual transcription and analysis, making it ideal for researchers, journalists, and business analysts alike.
@@ -26,7 +26,7 @@ Here's a high-level overview of each step in the pipeline:
 
 **Automated pipeline converting audio data into structured reports using Kedro.** 
 
-![image](/misc/kedro-pipeline.png)
+![image](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/UIGT/misc/kedro-pipeline.png)
 
 *Footnote: This pipeline efficiently processes audio interviews, providing structured insights for researchers, journalists, and analysts.*
 
