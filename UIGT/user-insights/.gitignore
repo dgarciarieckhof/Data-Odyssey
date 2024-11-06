@@ -20,6 +20,7 @@ src/**
 
 # keep also the example dataset
 !data/01_raw/*
+!data/08_report/*
 
 
 ##########################
