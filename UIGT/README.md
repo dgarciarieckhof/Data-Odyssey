@@ -48,7 +48,7 @@ Summarize the key points each speaker made, flagging trends or insights.
 Generate a final report with all the insights neatly organized.
 What could take you hours to transcribe and analyze now happens in minutes, letting you focus on deeper analysis rather than data wrangling.
 
-[Output example]()
+[Output example](https://github.com/dgarciarieckhof/Data-Odyssey/blob/main/UIGT/user-insights/data/08_reporting/el_test_a_florentino.html)
 
 ## Why This Pipeline Matters
 In fields like journalism and research, the ability to quickly analyze spoken data is crucial. But transcription alone is only part of the puzzle. This pipeline goes beyond mere transcription by separating speakers, performing text analysis, and producing summaries—an end-to-end solution for deriving value from audio data.
