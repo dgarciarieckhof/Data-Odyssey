@@ -1,0 +1,18 @@
+# This is a boilerplate parameters config generated for pipeline 'llm_parsing'
+# using Kedro 0.19.9.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.9/configuration/parameters.html
+
+model:
+  model: nousResearch/Hermes-3-Llama-3.1-8B
+  quantization: 8bit
+  flash_attn: False
+  device: cuda
+
+generation:
+  language: spanish
+  max_new_tokens: 2100
+  temperature: 0.3
+  repetition_penalty: 1.1
+  do_sample: True

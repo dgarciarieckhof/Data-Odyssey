@@ -1,0 +1,11 @@
+interviews:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/interviews.csv
+
+interview_scripts:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/interview_scripts.pkl
+
+processed_scripts:
+  type: pickle.PickleDataset
+  filepath: data/07_model_output/processed_scripts.pkl
