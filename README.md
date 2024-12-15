@@ -10,4 +10,5 @@ Data Odyssey refers to the learning journey of exploring new ideas and approache
 3. **LBERT:** N classes classification using BERT models for long-text (N>2) 
 4. **NTTW:** No Time To Watch - Building an AI-Powered Video Understanding System
 5. **VLMs:** Exploring Capabilities and Potential Use Cases for Visual Language Models 
-6. **GENAIA:** Empowering Solutions Through Agentic AI Frameworks 
+6. **UIGT:** User Insights Gathering Tool - Extracting Insights From Audio Data
+7. **GENAIA:** Empowering Solutions Through Agentic AI Frameworks 
