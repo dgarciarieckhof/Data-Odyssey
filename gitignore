@@ -1,2 +1,3 @@
 *.identifier
 *.Zone.Identifier
+.venv/
